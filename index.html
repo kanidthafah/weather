@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"
+    />
+  </head>
+  <body>
+    <div class="title">
+      <h1>Welcome!</h1>
+      <h2></h2>
+    </div>
+    <div class="container">
+      <!-- Search Box -->
+      <div class="search-box">
+        <span class="material-symbols-outlined" id="icon-location">
+          location_on
+        </span>
+        <input type="text" placeholder="Location" id="city" />
+        <button class="btn-search" type="submit">
+          <span class="material-symbols-outlined"> search </span>
+        </button>
+      </div>
+      <!-- Box -->
+      <div class="box">
+        <!-- Display Box  -->
+        <div class="display-box">
+          <h1 class="display-city"></h1>
+          <div class="display-img">
+            <div class="display-img-box">
+              <img src="image/weather-img/clouds.png" />
+            </div>
+          </div>
+
+          <div class="display-weather">
+            <h2 class="temp"></h2>
+            <h2 class="main"></h2>
+            <h3 class="description"></h3>
+          </div>
+        </div>
+        <!-- Details Box -->
+        <div class="details-box">
+          <div class="feels-like">
+            <div class="feels-like-box">
+              <i class="ti ti-mood-wink-2"></i>
+            </div>
+            <div class="feels-like-detail">
+              <h4>Feels Like</h4>
+              <h2 id="feels-like"></h2>
+            </div>
+          </div>
+
+          <div class="humidity">
+            <div class="humidity-box">
+              <i class="ti ti-ripple"></i>
+            </div>
+            <div class="humidity-detail">
+              <h4>Humidity</h4>
+              <h2 id="humidity"></h2>
+            </div>
+          </div>
+
+          <div class="wind">
+            <div class="wind-box">
+              <i class="ti ti-wind"></i>
+            </div>
+            <div class="wind-detail">
+              <h4>Wind</h4>
+              <h2 id="wind"></h2>
+            </div>
+          </div>
+
+          <div class="temp-min">
+            <div class="temp-min-box">
+              <i class="ti ti-sun-low"></i>
+            </div>
+            <div class="temp-min-detail">
+              <h4>Min</h4>
+              <h2 id="temp-min"></h2>
+            </div>
+          </div>
+
+          <div class="temp-max">
+            <div class="temp-max-box">
+              <i class="ti ti-sun-high"></i>
+            </div>
+            <div class="temp-max-detail">
+              <h4>Max</h4>
+              <h2 id="temp-max"></h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="errorDisplay">
+        <img alt="error-image"/>
+        <p class="name-city"></p>
+        <p class="text-error"></p>
+      </div>
+    </div>
+    <footer>
+      <p>Copyright © 2024 by Kanidtha</p>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
