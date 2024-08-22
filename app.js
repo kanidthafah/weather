@@ -54,6 +54,7 @@ function handleButtonClick(event) {
                     displayBox.classList.add('active')
                     detailsBox.classList.add('active')
                     errorDiv.classList.remove('active')
+                    textDescription.innerHTML = "Enter a location"
                 }
 
                 const cityDisplay = document.querySelector('.display-city')
